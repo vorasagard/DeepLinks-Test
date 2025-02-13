@@ -5,18 +5,6 @@
     ],
     "target": {
       "namespace": "android_app",
-      "package_name": "in.dmart.stg",
-      "sha256_cert_fingerprints": [
-        "9D:17:38:E0:3C:95:E3:03:1E:7C:C5:24:34:63:23:98:B8:E9:6A:1A:14:99:68:FD:84:C8:92:3F:E3:80:CC:E7"
-      ]
-    }
-  },
-  {
-    "relation": [
-      "delegate_permission/common.handle_all_urls"
-    ],
-    "target": {
-      "namespace": "android_app",
       "package_name": "in.dmart.uat",
       "sha256_cert_fingerprints": [
         "9D:17:38:E0:3C:95:E3:03:1E:7C:C5:24:34:63:23:98:B8:E9:6A:1A:14:99:68:FD:84:C8:92:3F:E3:80:CC:E7"
@@ -32,18 +20,6 @@
       "package_name": "in.dmart",
       "sha256_cert_fingerprints": [
         "9D:17:38:E0:3C:95:E3:03:1E:7C:C5:24:34:63:23:98:B8:E9:6A:1A:14:99:68:FD:84:C8:92:3F:E3:80:CC:E7"
-      ]
-    }
-  },
-  {
-    "relation": [
-      "delegate_permission/common.handle_all_urls"
-    ],
-    "target": {
-      "namespace": "android_app",
-      "package_name": "in.dmart.stg",
-      "sha256_cert_fingerprints": [
-        "1F:24:4C:2C:A9:74:64:54:50:5C:FE:CF:7A:0C:58:08:E9:AC:65:0B:6C:A7:6A:29:D4:35:AF:74:91:24:57:46"
       ]
     }
   },
