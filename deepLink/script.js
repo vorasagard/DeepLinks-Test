@@ -12,24 +12,21 @@ function getDeviceType() {
     return "Unknown";
 }
 
-function openAppOrStore(androidStoreUrl, iosStoreUrl) {
+function redirectToStore(androidStoreUrl, iosStoreUrl) {
     const deviceType = getDeviceType();
+    const pathAndQuery = window.location.pathname + window.location.search + window.location.hash;
     
     if (deviceType === "Android") {
-        setTimeout(() => {
-            window.location.href = androidStoreUrl;
-        }, 2000);
+        window.location.href = androidStoreUrl + pathAndQuery;
     } else if (deviceType === "iOS") {
-        setTimeout(() => {
-            window.location.href = iosStoreUrl;
-        }, 2000);
+        window.location.href = iosStoreUrl + pathAndQuery;
     } else {
-        window.location.href = "https://www.dmart.in/";
+        window.location.href = "https://www.dmart.in/" + pathAndQuery;
     }
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    openAppOrStore(
+    redirectToStore(
         "https://play.google.com/store/apps/details?id=in.dmart", // Android Play Store URL
         "https://apps.apple.com/in/app/dmart-online-grocery-shop/id1121933197" // iOS App Store URL
     );
